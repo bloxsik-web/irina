@@ -1,6 +1,5 @@
-# main.py
 from functions.dir import instance
-from functions.manager import create_folder, delete_folder
+from functions.manager import create_folder, delete_folder, file_add
 
 def main():
     instance()
@@ -14,6 +13,8 @@ def main():
             delete_folder()
         elif wtf.lower() == "выход":
             break
+        elif wtf.lower() == "создай файл":
+            file_add()
         
         print()
 

@@ -19,3 +19,14 @@ def delete_folder():
         print(f"Ошибка")
     except Exception as e:
         print(f"Ошибка")
+
+def file_add():
+    name_file = input("Введите название файла: ")
+    try:
+        with open(name_file, 'x') as f:
+            pass
+        print(f"Файл '{name_file}' успешно создан")
+    except FileExistsError:
+        print(f"Ошибка: Файл '{name_file}' уже существует")
+    except Exception as e:
+        print(f"Ошибка: {e}")
