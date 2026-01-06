@@ -1,6 +1,7 @@
 from functions.dir import instance
 from functions.TimeUtil import get_time
 from functions.manager import create_folder, delete_folder, file_add
+from functions.MathUtil import CallMath
 
 def main():
     instance()
@@ -18,6 +19,12 @@ def main():
             file_add()
         elif wtf.lower() == "сколько время":
             get_time()
+        elif wtf.lower() == "реши пример":
+            CallMath()
+        elif wtf.lower() == "реши задачу":
+            CallMath()
+        elif wtf.lower() == "посчитай":
+            CallMath()
 
 if __name__ == "__main__":
     main()
