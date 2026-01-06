@@ -8,7 +8,7 @@ def create_folder():
     except FileExistsError:
         print(f"Папка '{folder_name}' уже существует")
     except Exception as e:
-        print(f"Ошибка при создании папки: {e}")
+        print(f"Ошибка {e}")
 
 def delete_folder():
     fold_del = input("Введите название папки: ")
@@ -25,8 +25,8 @@ def file_add():
     try:
         with open(name_file, 'x') as f:
             pass
-        print(f"Файл '{name_file}' успешно создан")
+        print(f"файл '{name_file}' создан")
     except FileExistsError:
-        print(f"Ошибка: Файл '{name_file}' уже существует")
+        print(f"Ошибка: файл '{name_file}' уже существует")
     except Exception as e:
         print(f"Ошибка: {e}")

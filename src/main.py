@@ -1,4 +1,5 @@
 from functions.dir import instance
+from functions.TimeUtil import get_time
 from functions.manager import create_folder, delete_folder, file_add
 
 def main():
@@ -15,8 +16,8 @@ def main():
             break
         elif wtf.lower() == "создай файл":
             file_add()
-        
-        print()
+        elif wtf.lower() == "сколько время":
+            get_time()
 
 if __name__ == "__main__":
     main()
